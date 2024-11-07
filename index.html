@@ -1,11 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Frontend Web Test</title>
 </head>
+
 <body>
-    
+
+    <nav>
+        <div class="nav-container">
+            <h1>Navbar</h1>
+            <ul class="nav-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="form-section">
+            <h2>Form Artikel</h2>
+
+            <form id="articleForm">
+
+                <div id="message"></div>
+
+                <div>
+                    <label for="author">Penulis:</label>
+                    <input type="text" id="author" required>
+                </div>
+
+                <div>
+                    <label for="title">Judul:</label>
+                    <input type="text" id="title" required>
+                </div>
+
+                <div>
+                    <label for="content">Isi:</label>
+                    <textarea id="content" required></textarea>
+                </div>
+
+                <button type="submit">Kirim</button>
+
+            </form>
+        </div>
+
+        <div class="article-section">
+            <h2>Artikel Terbaru</h2>
+            <div id="articleDisplay"></div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© 2024 Frontend Web Test</p>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="global.js"></script>
+
 </body>
+
 </html>
